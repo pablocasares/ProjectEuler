@@ -1,8 +1,12 @@
 package net.projecteuler;
 
-public class Problem3 {
+public class Problem3 implements ProblemInterface {
 
-    Problem3() {
+
+    private Problem3() {
+    }
+
+    public static void resolve() {
         long number = 600851475143L;
         for (long i = 1; i < number; i++) {
             if (number % i == 0 && findPrime(i)) {
