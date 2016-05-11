@@ -8,14 +8,17 @@ public class Problem3 implements ProblemInterface {
 
     public static void resolve() {
         long number = 600851475143L;
-        for (long i = 1; i < number; i++) {
+        long result = 0;
+        for (long i = 1; i <= number; i++) {
             if (number % i == 0 && findPrime(i)) {
-                System.out.println("The number: " + i + " is prime");
+                number = number / i;
+                result = i;
             }
         }
+        System.out.println("Result: "+result);
     }
 
-    static boolean findPrime(long number) {
+    static private boolean findPrime(long number) {
         boolean isPrime = true;
         for (long i = 1; i < number; i++) {
             if (i != 1L && i != number && number % i == 0) {
