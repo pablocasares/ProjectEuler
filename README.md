@@ -1,5 +1,5 @@
 # ProjectEuler
-This repository contains solutions to problems published at [https://projecteuler.net]
+This repository contains solutions to problems published at https://projecteuler.net
 
 ## Usage
 To solve problems:
